@@ -109,10 +109,15 @@ class HomePage extends StatelessWidget {
             size: 30,
             color: Colors.white,
           ),
-          Icon(
-            Icons.shopping_cart,
-            size: 30,
-            color: Colors.white,
+          IconButton(
+            icon: Icon(
+              Icons.shopping_cart,
+              size: 30,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pushNamed(context, "cartPage");
+            },
           )
         ],
       ),
